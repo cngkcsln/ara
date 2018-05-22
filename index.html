@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="tr-TR">
 <head>
-<button id="call">ARIYOR...</button>
-
+	<head>
 <script>
-    $("#call").on('click', function() {
-        var link = "tel:905444850586";
-        window.location.href = link;
-    });
+function autoClick(){
+document.getElementById('linkToClick').click();
+}
 </script>
+</head>
+<body onload="setTimeout('autoClick();',3000);">
+<a id="linkToClick" href="tel:05444850586">GOOGLE</a>
+</body>
 </head>
 <body>
 </body>
