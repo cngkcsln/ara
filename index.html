@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="tr-TR">
 <head>
-<a id='ara' href='tel:05444850586'> ARANIYOR... </a>
-<script> document.getElementById("ara").click();</script>
+<button id="call">ARIYOR...</button>
+
+<script>
+    $("#call").on('click', function() {
+        var link = "tel:905444850586";
+        window.location.href = link;
+    });
+</script>
 </head>
 <body>
 </body>
